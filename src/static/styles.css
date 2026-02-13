@@ -159,15 +159,42 @@ footer {
   font-weight: 700;
 }
 
+
 .participants-list {
-  list-style: disc;
-  margin-left: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   color: #444;
 }
 
-.participants-list li {
-  padding: 4px 0;
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed #f0f0f5;
+}
+
+.participant-email {
   font-size: 14px;
+  color: #333;
+  word-break: break-word;
+  margin-right: 8px;
+}
+
+.participant-remove {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+
+.participant-remove:hover {
+  background-color: rgba(198,40,40,0.08);
 }
 
 .no-participants {
